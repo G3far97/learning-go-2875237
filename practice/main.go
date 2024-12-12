@@ -15,8 +15,10 @@ func main() {
 	switch dow := rand.Intn(7) + 1; dow {
 	case 1:
 		result = "It's Sunday!"
+		// fallthrough
 	case 2:
 		result = "It's Monday!"
+		// fallthrough
 	default:
 		result = "It's some other day!"
 	}
